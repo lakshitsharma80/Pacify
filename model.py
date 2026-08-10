@@ -13,7 +13,7 @@ class AI():
         with open("./Pacify/API_KEY.txt","r") as file:
             self.api_key = file.read().strip()
             
-        if self.api_key == "none" or self.api_key == "n":
+        if self.api_key == "sk-a" or self.api_key == "skip-api":
             print("No API key found. Please set your API key.")
             api_again = input("Enter your API KEY for using AI model (Mistral/nemotron/NVIDIA_MODELS):  ")
             self.api_key = api_again

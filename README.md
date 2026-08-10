@@ -94,6 +94,11 @@ exit --model
 ```
 Shows the all data in table format stored in ``Data.py `` file.
 
+````commandline
+skip-api
+````
+Skip the API prompt in the login section and you can enter your API key later alternative command : ``sk-a``
+
 ---
 ## 📧 Email Feature Setup
 
