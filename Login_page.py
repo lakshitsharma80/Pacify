@@ -11,12 +11,12 @@ class Login_Section:
             if self.students == 0:
                 print("No data to save Invalid number of objects '0' is not defined. Try again!")
             else:
-                self.api_key = input("Enter your API KEY for using AI model (Mistral/nemotron/NVIDIA_MODELS)/It is option you can just type 'none or n' if you don't want to use AI model: ")
-                if self.api_key == "none" or self.api_key == "n":
-                    with open("./Pacify/API_KEY.txt","w") as file:
+                self.api_key = input("Enter your API KEY for using AI model (NVIDIA_MODELS/Meta/llama-3.1-8b-instruct)/It is option you can just type 'skip-api or 'sk-a' if you don't want to use AI model: ")
+                if self.api_key == "skip-api" or self.api_key == "sk-a":
+                    with open("API_KEY.txt","w") as file:
                         file.write("none")
                 else:
-                    with open("./Pacify/API_KEY.txt","w") as file:
+                    with open("API_KEY.txt","w") as file:
                         file.write(self.api_key)
                                     
                 for i in range(self.students):
@@ -31,7 +31,7 @@ class Login_Section:
                     })
 
                     # Write data into Data.py
-                    with open("./Pacify/Data.py","w") as file:
+                    with open("Data.py","w") as file:
                         file.write("User_data_1 = [\n")
                         for user in Data.User_data_1:
                             file.write("     {\n")
@@ -45,10 +45,10 @@ class Login_Section:
                 self.login = False
 
     def CLEAR_DATA(self):
-        with open("./Pacify/Data.py", "w") as file:
+        with open("Data.py", "w") as file:
             file.write("User_data_1 = []")
         
-        with open("./Pacify/API_KEY.txt", "w") as file:
+        with open("API_KEY.txt", "w") as file:
             file.write("none")
         print("Your data removed successfully! Restart your software again for those changes.")
 

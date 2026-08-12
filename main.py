@@ -140,7 +140,7 @@ def Email_specific_object():
         if not Object_found:
             print("I didn't find the object,☹️ please try again!")
         if Object_found:
-            print("Email is sent successfully to the object👏👏!")
+            print("Email is sent successfully to the object!")
 
 
     except smtplib.socket.gaierror:
@@ -162,7 +162,7 @@ data_length = len(Data.User_data_1)
 ai = model.AI()
 
 if data_length == 0:
-    print("You have zero data on. You have to login to store data ⚠️")
+    print("You have zero data on. You have to login to store data!")
     print(Login_logo)
     Login.ASK_AND_STORE()
 else:
