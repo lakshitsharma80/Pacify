@@ -159,6 +159,8 @@ Security & privacy notes
 - Normal query: "Explain how to validate an email address in Python." → AI responds normally.
 - Data-mode query: "List the names of all users from pacify data" → Append `from pacify data` (or `pd`) to trigger the data mode behavior described above.
 
+**An Important note**
+Some features of AI don't come on the **exe version of the app**; this will update after sometimes⚠️
 ## 📧 Email Feature Setup
 
 The email functionality uses **Gmail SMTP**. Before using it:
