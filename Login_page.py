@@ -7,7 +7,7 @@ class Login_Section:
     
     def ASK_AND_STORE(self):
         while self.login:
-            self.students = int(input("How many object are there?: "))
+            self.students = int(input("How many object are there or type command $: "))
             if self.students == 0:
                 print("No data to save Invalid number of objects '0' is not defined. Try again!")
             else:

@@ -36,13 +36,13 @@ def Find_the_object():
                 # Message
                 Object_found = True
         if Object_found:
-            print("I sucessfully found the object.")
+            print("I successfully found the object.")
             Programm = False
         else:
-            print("\033[96m"+"Sorry! I could'nt find that object.Try again! ☹️"+"\033[0m")
+            print("\033[96m"+"Sorry! I couldn't find that object.Try again! ☹️"+"\033[0m")
 
 def Edit_details():
-    user_id = input("Enter the ID of the perosn you want to Edit: ")
+    user_id = input("Enter the ID of the person you want to Edit: ")
     for person in Data.User_data_1:
         if person['ID'] == user_id:
                 user_details = prettytable.PrettyTable()
@@ -84,7 +84,7 @@ def Email_all_obeject():
     User_warning.field_names = ["S.NO","Warning ⚠️"]
     User_warning.add_row(["1.","\033[91m"+"In this content you must have internet if internet is gone it may give error. Internet is  very important" + "\033[0m"])
     User_warning.add_row(["2.","\033[91m"+"Enter your email correctly and make sure you have an app password (From google)."+ "\033[0m"])
-    User_warning.add_row(["3.","\033[91m"+"In this content onlt G-mail email IDs are working other will comming soon. In next update" + "\033[0m"])
+    User_warning.add_row(["3.","\033[91m"+"In this content only G-mail email IDs are working other will coming soon. In next update" + "\033[0m"])
     print(User_warning)
 
     #Information section: -
@@ -97,7 +97,7 @@ def Email_all_obeject():
         server = smtplib.SMTP("smtp.gmail.com",587)
         server.starttls()
         server.login(Email, App_password)
-        # Seding Data
+        # Sending Data
         for user_sender in Data.User_data_1:
             msg = EmailMessage()
             msg["From"] = Email
@@ -108,11 +108,11 @@ def Email_all_obeject():
             print(f"Email sent to ID: {user_sender['ID']}")
         # Message
         server.quit()
-        print("Email sended succesfully!")
+        print("Email sent successfully!")
     except smtplib.socket.gaierror:
-        print("\033[91m"+"Error: "+"\033[0m"+"An error is occured during this procces may be you type wrong email or your internet is not working. Try again later with proper internet and Email ID!")
+        print("\033[91m"+"Error: "+"\033[0m"+"An error is occurred during this process may be you type wrong email or your internet is not working. Try again later with proper internet and Email ID!")
     except smtplib.SMTPAuthenticationError:
-         print("\033[91m"+"Error: "+"\033[0m"+"An error is occured during this procces may be you type wrong email or your APP PASSWORD is wrong. Try again later with proper email and with correct APP PASSWORD!")
+         print("\033[91m"+"Error: "+"\033[0m"+"An error is occurred during this process may be you type wrong email or your APP PASSWORD is wrong. Try again later with proper email and with correct APP PASSWORD!")
 
 
 def Email_specific_object():
@@ -121,7 +121,7 @@ def Email_specific_object():
     User_warning.field_names = ["S.NO","Warning ⚠️"]
     User_warning.add_row(["1.","\033[91m"+"In this content you must have internet if internet is gone it may give error. Internet is  very important" + "\033[0m"])
     User_warning.add_row(["2.","\033[91m"+"Enter your email correctly and make sure you have an app password (From google)."+ "\033[0m"])
-    User_warning.add_row(["3.","\033[91m"+"In this content onlt G-mail email IDs are working other will comming soon. In next update" + "\033[0m"])
+    User_warning.add_row(["3.","\033[91m"+"In this content only G-mail email IDs are working other will coming soon. In next update" + "\033[0m"])
     print(User_warning)
     user_id = input("Enter the user ID which you want to E-mail: ")
     Object_found = False
@@ -158,12 +158,12 @@ def Email_specific_object():
         if not Object_found:
             print("I didn't find the object,☹️ please try again!")
         if Object_found:
-            print("Email is sended succesfully to the object👏👏!")
+            print("Email is sent successfully to the object👏👏!")
 
     except smtplib.socket.gaierror:
-        print("\033[91m"+"Error: "+"\033[0m"+"An error is occured during this procces may be you type wrong email or your internet is not working. Try again later with proper internet and Email ID!")
+        print("\033[91m"+"Error: "+"\033[0m"+"An error is occurred during this process may be you type wrong email or your internet is not working. Try again later with proper internet and Email ID!")
     except smtplib.SMTPAuthenticationError:
-        print("\033[91m"+"Error: "+"\033[0m"+"An error is occured during this procces may be you type wrong email or your APP PASSWORD is wrong. Try again later with proper email and with correct APP PASSWORD!")
+        print("\033[91m"+"Error: "+"\033[0m"+"An error is occurred during this process may be you type wrong email or your APP PASSWORD is wrong. Try again later with proper email and with correct APP PASSWORD!")
 
 def show_all_data():
     data_table = prettytable.PrettyTable()
@@ -200,7 +200,7 @@ else:
     table.field_names = ["Number","Options You have"]
     table.add_row(["1.","Remove the all data from your device."])
     table.add_row(["2.","E-mail all objects."])
-    table.add_row(["3.","E-mail specifc object by ID."])
+    table.add_row(["3.","E-mail specific object by ID."])
     table.add_row(["4.","Edit all the details on your data."])
     table.add_row(["5.","Find the object by his ID."])
 
@@ -208,7 +208,7 @@ else:
     print(table)
     while programm_running:
         input_user = input("Type the option number from the table or type command $: ").lower()
-        # Controler: -
+        # Controller: -
         if input_user == "1":
             remove_data(Login)
         elif input_user == "2":
