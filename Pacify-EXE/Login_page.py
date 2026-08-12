@@ -45,9 +45,10 @@ class Login_Section:
                             file.write(f"         'E-mail': '{user["E-mail"]}'\n")
                             file.write("     },\n")
                         file.write("]\n")
-                
-                    print("Your data successfully saved! Restart your software again for those changes.")
-                    self.login = False
+
+                self.login = False
+                print("Your data successfully saved! Restart your software again for those changes.")
+
 
     def CLEAR_DATA(self):
         with open(data_file, "w") as file:

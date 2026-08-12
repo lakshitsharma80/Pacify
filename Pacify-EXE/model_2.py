@@ -38,14 +38,7 @@ class AI:
                     if chunk.choices and chunk.choices[0].delta.content is not None:
                         print(chunk.choices[0].delta.content, end="")
             else:
-                system_prompt = """You are Pacify, an advanced AI model expert in coding and data analysis for the Pacify project.
-
-                CRITICAL INSTRUCTION - Follow these rules EXACTLY:
-                1. If the user's prompt ENDS with "from pacify data" or "pd" (case-insensitive), respond with ONLY the two characters: 'DX' only.
-                2. Do NOT add anything else - no spaces, no punctuation, no explanation
-                3. Only 'DX' - nothing more
-
-                If the prompt does NOT end with "from pacify data" or "pd":
+                system_prompt = """You are Pacify, an advanced AI model expert in coding and data analysis for the Pacify project
                 - Provide helpful responses about coding and data analysis
                 - Output should be plain text or ASCII (no markdown)
                 - Keep responses concise
@@ -67,29 +60,4 @@ class AI:
                 for chunk in completion:
                     if chunk.choices and chunk.choices[0].delta.content is not None:
                         a = chunk.choices[0].delta.content
-
-                        if a == 'DX':
-                            print("Data mode: -")
-                            completion = client.chat.completions.create(
-                                model="meta/llama-3.1-8b-instruct",
-                                messages=[
-                                    {"role": "system", "content": (
-                                        "You are an advanced AI your name is Pacify, model that is very expert in coding and in data analysis. "
-                                        "You are chosen to manage data in the project named Pacify. "
-                                        "Output should be without any markdown and should be simple text or ASCII."
-                                        f"You have also info about people data of pacify if people asks question about data tell from this, you must give answer only only form this data {Data.User_data_1} and whenever you give info from this data tell them that this data is collected form pacify data. And remember don't modify anything from this data like email , id name etc."
-                                    )},
-                                    {"role": "user", "content": prompt}
-                                ],
-                                temperature=0.6,
-                                top_p=0.7,
-                                max_tokens=450,
-                                stream=True
-                            )
-
-                            for chunk1 in completion:
-                                if chunk1.choices and chunk1.choices[0].delta.content is not None:
-                                    a = chunk1.choices[0].delta.content
-                                    print(a, end="")
-                        else:
-                            print(a, end="")
+                        print(a, end="")
