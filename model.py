@@ -22,7 +22,7 @@ class AI:
             with open("API_KEY.txt","w") as file:
                 file.write(self.api_key)
                 
-        print(Background_2.logo)
+        print(ai_back.logo)
         running = True
 
         client = OpenAI(

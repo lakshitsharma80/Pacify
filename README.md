@@ -1,6 +1,10 @@
 # 📦 Pacify — Object & Contact Manager
 
 <p align="center">
+  <img src="./P.png" alt="Pacify Logo" width="200"/>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20Mac-lightgrey?style=for-the-badge"/>
@@ -9,6 +13,7 @@
 <p align="center">
   A lightweight Python CLI tool to <strong>store, manage, find, edit, and email</strong> your objects/contacts — all from the terminal.
 </p>
+
 
 ---
 
@@ -98,6 +103,13 @@ Shows the all data in table format stored in ``Data.py `` file.
 skip-api
 ````
 Skips the API prompt in the login section and you can enter your API key later alternative command : ``sk-a``
+
+```commandline
+csv --[YOUR/FILE/PATH/NAME.csv]
+```
+It extracts the data from the csv file and stores it in the ``Data.py`` file. Make sure to use the correct path of the csv file. And the csv file should have the following format: -
+**Name, ID, Email** In the filed names exact capital letter too. If there is any error in the csv file format, it will not be stored in the ``Data.py`` file.
+```
 
 ---
 
