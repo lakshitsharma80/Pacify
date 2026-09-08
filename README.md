@@ -109,7 +109,6 @@ csv --[YOUR/FILE/PATH/NAME.csv]
 ```
 It extracts the data from the csv file and stores it in the ``Data.py`` file. Make sure to use the correct path of the csv file. And the csv file should have the following format: -
 **Name, ID, Email** In the filed names exact capital letter too. If there is any error in the csv file format, it will not be stored in the ``Data.py`` file.
-```
 
 ---
 
