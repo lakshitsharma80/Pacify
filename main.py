@@ -191,8 +191,8 @@ if data_length == 0:
         Login.ASK_AND_STORE()
     elif b[0] == "csv":
         csv = dic_conv.Read_csv(b[1])
+        print("Checking csv requirements.....")
         csv.save_csv()
-        print("Yor data saved successfully! restart your software.")
     else:
         print("\033[91m" + "Error: Command not found! " + "\033[0m")
 else:
