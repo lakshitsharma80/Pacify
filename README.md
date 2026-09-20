@@ -29,7 +29,7 @@
 | 🗑️ **Clear Data** | Wipe all stored records with a single command |
 
 ---
-For more information : [`Pacify website`](https://pacify-cli.netlify.app/)
+For more information : [`Pacify website`](https://lakshitsharma80.github.io/pacify.github.io/)
 
 ## 📁 Project Structure
 
@@ -199,7 +199,7 @@ The email functionality uses **Gmail SMTP**. Before using it:
 - Python **3.10+**
 - [`prettytable`](https://pypi.org/project/prettytable/) — for table formatting in the terminal
 - A **Gmail account** with App Password enabled (for email features)
-- For more details visit at this link : [`Pacify website`](https://pacify-cli.netlify.app/)
+- For more details visit at this link : [`Pacify website`](https://lakshitsharma80.github.io/pacify.github.io/)
 
 ---
 
@@ -218,7 +218,7 @@ Contributions are welcome! Feel free to:
 ## 📜 License
 
 This project is licensed under the **Apache 2.0** — see the [LICENSE](LICENSE) file for details.
-- For more details visit at this link : [`Pacify website`](https://pacify-cli.netlify.app/)
+- For more details visit at this link : [`Pacify website`](https://lakshitsharma80.github.io/pacify.github.io/)
 
 ---
 
