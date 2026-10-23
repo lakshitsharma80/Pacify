@@ -11,7 +11,8 @@
 </p>
 
 <p align="center">
-  A lightweight Python CLI tool to <strong>store, manage, find, edit, and email</strong> your objects/contacts — all from the terminal.
+  A lightweight Python CLI tool to <strong>store, manage, find, edit, and email</strong> your objects/contacts — all from the terminal. **If you are beginner go to the telegram support bot of pacify to use pacify** 👇
+   [`https://t.me/pacifysupportbot`](https://t.me/pacifysupportbot)
 </p>
 
 
