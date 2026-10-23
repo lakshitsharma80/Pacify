@@ -11,8 +11,7 @@
 </p>
 
 <p align="center">
-  A lightweight Python CLI tool to <strong>store, manage, find, edit, and email</strong> your objects/contacts — all from the terminal. **If you are beginner go to the telegram support bot of pacify to use pacify** 👇
-   [`https://t.me/pacifysupportbot`](https://t.me/pacifysupportbot)
+  A lightweight Python CLI tool to <strong>store, manage, find, edit, and email</strong> your objects/contacts — all from the terminal.
 </p>
 
 
@@ -43,7 +42,8 @@ For more information : [`Pacify website`](https://lakshitsharma80.github.io/paci
 ```
 
 ---
-
+**If you are beginner go to the telegram support bot of pacify to use pacify** 👇
+   [`https://t.me/pacifysupportbot`](https://t.me/pacifysupportbot)
 ## ⚙️ Installation
 
 ### 1. Clone the Repository
