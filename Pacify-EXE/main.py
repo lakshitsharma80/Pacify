@@ -83,7 +83,7 @@ def Email_all_obeject():
     User_warning = prettytable.PrettyTable()
     User_warning.field_names = ["S.NO","Warning ⚠️"]
     User_warning.add_row(["1.","\033[91m"+"In this content you must have internet if internet is gone it may give error. Internet is  very important" + "\033[0m"])
-    User_warning.add_row(["2.","\033[91m"+"Enter your email correctly and make sure you have an app password (From google)."+ "\033[0m"])
+    User_warning.add_row(["2.","\033[91m"+"Enter your email correctly and make sure you have an app password (From google account)."+ "\033[0m"])
     User_warning.add_row(["3.","\033[91m"+"In this content only G-mail email IDs are working other will coming soon. In next update" + "\033[0m"])
     print(User_warning)
 
@@ -158,7 +158,7 @@ def Email_specific_object():
         if not Object_found:
             print("I didn't find the object,☹️ please try again!")
         if Object_found:
-            print("Email is sent successfully to the object👏👏!")
+            print("Email is sent successfully to the object!")
 
     except smtplib.socket.gaierror:
         print("\033[91m"+"Error: "+"\033[0m"+"An error is occurred during this process may be you type wrong email or your internet is not working. Try again later with proper internet and Email ID!")
